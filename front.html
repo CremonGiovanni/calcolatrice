@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>JSES3</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Start Styles. Move the 'style' tags and everything between them to between the 'head' tags -->
+    <style type="text/css">
+      .sexyPoglianiTable {
+        background-color: #ffffe0;
+        border-collapse: collapse;
+        color: #000;
+        font-size: 18px;
+      }
+      .sexyPoglianiTable th {
+        background-color: #bdb76b;
+        color: white;
+        /* width: 50%; */
+      }
+      .sexyPoglianiTable td,
+      .sexyPoglianiTable th {
+        padding: 5px;
+        border: 0;
+      }
+      .sexyPoglianiTable td {
+        border-bottom: 1px dotted #bdb76b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: chartreuse">JSES3</h1>
+    <h2>JQuery calculator</h2>
+    <div>
+      <table class="sexyPoglianiTable" id="table">
+        <th>ID</th>
+        <th>N1</th>
+        <th>SIGN</th>
+        <th>N2</th>
+        <th>RES</th>
+        <tr>
+          <td>1</td>
+          <td>4</td>
+          <td>/</td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>7</td>
+          <td>*</td>
+          <td>3</td>
+          <td>21</td>
+        </tr>
+      </table>
+      <button onclick="localStorage.clear(); location.reload();">Clear localStorage</button>
+    </div>
+    <br /><br />
+    <input type="number" id="N1" placeholder="first number" />
+    <br />
+    <input type="number" id="N2" placeholder="second number" />
+    <br /><br />
+    <button id="btn1">+</button>
+    <button id="btn2">-</button>
+    <button id="btn3">*</button>
+    <button id="btn4">/</button>
+    <script src="index.js"></script>
+  </body>
+</html>
